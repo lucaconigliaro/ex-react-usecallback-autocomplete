@@ -1,0 +1,54 @@
+/* Contenitore principale per centrare il contenuto */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Stile per il contenitore dell'input */
+.search-box {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+}
+
+/* Input field stile */
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Lista dei suggerimenti, visibile solo quando ci sono risultati */
+ul {
+  margin-top: 8px;
+  padding: 0;
+  list-style: none;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Ogni elemento della lista */
+li {
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+}
